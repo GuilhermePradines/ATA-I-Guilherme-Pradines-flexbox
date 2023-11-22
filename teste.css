@@ -1,0 +1,48 @@
+body,
+p   {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;      
+    font-style: italic;     
+    color: rgb(80, 78, 78); 
+    text-align: center;     
+}
+.principal {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "cabecalho cabecalho" 
+                         "secao barra-lateral" 
+                         "rodape rodape";
+}
+
+header {
+   grid-area: cabecalho;
+   background-color: #48CFE0;
+}
+
+section {
+    grid-area: secao;
+    background-color: #E05DA1;
+}
+
+ aside {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: barra-lateral;
+    background-color: #E0D475;
+    flex-flow: column wrap;
+}
+div{
+    margin: 1em;
+    height: 35%;
+    width: 35%;
+    background-color: yellow
+}
+
+footer {
+    grid-area: rodape;
+    background-color: #5de05e;
+}
